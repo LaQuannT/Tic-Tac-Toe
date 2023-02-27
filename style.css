@@ -1,0 +1,58 @@
+@import url('https://fonts.cdnfonts.com/css/fhhyperbole');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Fh_Hyperbole', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fcf4ec;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px;
+}
+
+.board {
+  display: grid;
+  max-width: fit-content;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  gap: 3px;
+  background-color: #a1a1a1;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf4ec;
+  font-size: 5rem;
+}
+
+button {
+  text-align: center;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px #a1a1a1;
+  color: #111;
+  height: 48px;
+  padding: 10px 25px;
+  margin: 20px;
+}
